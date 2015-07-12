@@ -12,7 +12,7 @@
         android:layout_width="fill_parent"
         android:layout_height="120dip"
         android:background="@color/dark_red"
-        android:orientation="vertical" >
+        android:orientation="vertical">
       
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -47,7 +47,8 @@
         android:layout_width="fill_parent"
         android:layout_height="72dip"
         android:orientation="horizontal"
-        android:paddingBottom="10dp" >
+        android:paddingBottom="10dp"
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -122,7 +123,8 @@
         android:layout_height="wrap_content"
         android:padding="5dip"
         android:background="@color/light_gray"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <Button
             android:id="@+id/buttonVisShowHide"
@@ -145,7 +147,8 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:paddingBottom="5dip"
-        android:paddingTop="5dip" >
+        android:paddingTop="5dip"
+        android:visibility="gone">
   
         <TextView
             android:id="@+id/statusText"
@@ -190,7 +193,8 @@
                 android:layout_weight="1"
                 android:layout_height="65dip"
                 android:gravity="center"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:visibility="gone">
                 
  				 <Button
                     android:id="@+id/buttonLibraryID"
@@ -237,7 +241,8 @@
          android:layout_weight="1"
          android:layout_height="65dip"
          android:gravity="center"
-         android:orientation="horizontal" >
+         android:orientation="horizontal"
+         android:visibility="gone">
 
                 <Button
                     android:id="@+id/buttonText"

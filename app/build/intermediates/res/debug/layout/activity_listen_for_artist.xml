@@ -10,10 +10,21 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click to Listen"
+        android:text="Listen"
         android:id="@+id/listen_button"
-        android:layout_centerHorizontal="true"
-        android:onClick="initializeGraceNote"/>
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutVisContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listen_button"
+        android:padding="5dip"
+        android:background="@color/light_gray"
+        android:orientation="vertical" >
+
+
+    </LinearLayout>
 
 </RelativeLayout>
 <!-- From: file:/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/src/main/res/layout/activity_listen_for_artist.xml -->

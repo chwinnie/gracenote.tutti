@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.List;
+
 
 public class MainActivity extends Activity {
 
@@ -22,7 +24,7 @@ public class MainActivity extends Activity {
     }
 
     public void showListenView(View view) {
-        Intent intent = new Intent(this, ListenForArtistActivity.class);
+        Intent intent = new Intent(this, GracenoteMusicID.class);
         startActivity(intent);
     }
 

@@ -84,6 +84,10 @@
             android:name="com.customer.example.ListenForArtistActivity"
             android:label="@string/title_activity_listen_for_artist" >
         </activity>
+        <activity
+            android:name="com.customer.example.VenueActivity"
+            android:label="@string/title_activity_venue" >
+        </activity>
     </application>
 
 </manifest>

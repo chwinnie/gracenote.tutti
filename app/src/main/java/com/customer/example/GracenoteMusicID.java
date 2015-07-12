@@ -1342,7 +1342,15 @@ public class GracenoteMusicID extends Activity {
 			if(artist.isEmpty()){
 				artist = album.artist().name().display();
 			}
-			artistText.setText( artist );
+			artistText.setText(artist);
+
+			Log.e("ARTIST", artist);
+			String artist_str = artist.toLowerCase().replace(" ", "");
+			Log.e("ARTIST2", artist_str.replaceAll("[^A-Za-z0-9\\s]", ""));
+
+			Intent intent = new Intent(this, VenueActivity.class);
+			intent.putExtra("artist", artist_str);
+			startActivity(intent);
 			
 			if ( album.trackMatched() != null ) {
 				trackText.setText( album.trackMatched().title().display() );
