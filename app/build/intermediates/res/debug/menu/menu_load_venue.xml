@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.customer.example.LoadVenueActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+</menu>
+<!-- From: file:/Users/winniecheng/AndroidStudioProjects/gn-mobile-android-1.1.7.3690/app/src/main/res/menu/menu_load_venue.xml -->
