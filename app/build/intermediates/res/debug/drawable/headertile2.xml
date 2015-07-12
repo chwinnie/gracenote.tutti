@@ -3,4 +3,4 @@
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
     android:src="@drawable/gracenote_header_tile_3" 
     android:tileMode="repeat" />
-<!-- From: file:/Users/winniecheng/AndroidStudioProjects/gn-mobile-android-1.1.7.3690/app/src/main/res/drawable/headertile2.xml -->
+<!-- From: file:/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/src/main/res/drawable/headertile2.xml -->

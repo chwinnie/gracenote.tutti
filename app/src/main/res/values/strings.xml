@@ -9,4 +9,5 @@
 
     <string name="title_activity_concert_list">ConcertListActivity</string>
     <string name="title_activity_load_venue">LoadVenueActivity</string>
+    <string name="title_activity_listen_for_artist">ListenForArtistActivity</string>
 </resources>

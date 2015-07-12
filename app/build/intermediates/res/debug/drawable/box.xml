@@ -2,4 +2,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="true" android:drawable="@drawable/box_on" />
     <item android:state_checked="false" android:drawable="@drawable/box_off" />
-</selector><!-- From: file:/Users/winniecheng/AndroidStudioProjects/gn-mobile-android-1.1.7.3690/app/src/main/res/drawable/box.xml -->
+</selector><!-- From: file:/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/src/main/res/drawable/box.xml -->

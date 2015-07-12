@@ -73,12 +73,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ConcertListActivity"
+            android:name=".VenueListActivity"
             android:label="@string/title_activity_concert_list" >
         </activity>
         <activity
             android:name=".LoadVenueActivity"
             android:label="@string/title_activity_load_venue" >
+        </activity>
+        <activity
+            android:name=".ListenForArtistActivity"
+            android:label="@string/title_activity_listen_for_artist" >
         </activity>
     </application>
 

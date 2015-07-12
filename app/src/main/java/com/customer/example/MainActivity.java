@@ -16,10 +16,16 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
-    public void showConcertList(View view) {
-        Intent intent = new Intent(this, ConcertListActivity.class);
+    public void showVenueList(View view) {
+        Intent intent = new Intent(this, VenueListActivity.class);
         startActivity(intent);
     }
+
+    public void showListenView(View view) {
+        Intent intent = new Intent(this, ListenForArtistActivity.class);
+        startActivity(intent);
+    }
+
 
 
     @Override

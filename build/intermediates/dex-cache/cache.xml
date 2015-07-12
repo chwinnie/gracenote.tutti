@@ -2,18 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/winniecheng/AndroidStudioProjects/gn-mobile-android-1.1.7.3690/app/libs/gnsdk_helpers.jar"
+        jar="/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/libs/gnsdk_helpers.jar"
         jumboMode="false"
         revision="23.0.0 rc3"
         sha1="7779fb5e8a081c6273cbf6c2f069cfdc313d6966">
-        <dex dex="/Users/winniecheng/AndroidStudioProjects/gn-mobile-android-1.1.7.3690/app/build/intermediates/pre-dexed/debug/gnsdk_helpers-0aa2c41fa276817652a8d84c0777977099d42eec.jar" />
+        <dex dex="/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/build/intermediates/pre-dexed/debug/gnsdk_helpers-36023a6c984989326f2601361296e5c8a3c71c9d.jar" />
     </item>
     <item
-        jar="/Users/winniecheng/AndroidStudioProjects/gn-mobile-android-1.1.7.3690/app/libs/gnsdk.jar"
+        jar="/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/libs/gnsdk.jar"
         jumboMode="false"
         revision="23.0.0 rc3"
         sha1="439eb3a2b54ee44c8ea54ab8359a7e0a002a795f">
-        <dex dex="/Users/winniecheng/AndroidStudioProjects/gn-mobile-android-1.1.7.3690/app/build/intermediates/pre-dexed/debug/gnsdk-0d447a9abb08eb753f1ce286b77ec02a3b441998.jar" />
+        <dex dex="/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/build/intermediates/pre-dexed/debug/gnsdk-8d0c6ac9062703c1855ac874e5eb50415c1bc86b.jar" />
     </item>
 
 </items>

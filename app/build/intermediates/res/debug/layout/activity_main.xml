@@ -18,23 +18,28 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose Concert"
+        android:text="Choose Venue"
         android:id="@+id/button"
         android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true"
-        android:onClick="showConcertList"/>
+        android:onClick="showVenueList"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Debugging"
+        android:text="Recognize Venue"
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/button"
         android:layout_alignStart="@+id/button"
-        android:layout_marginBottom="105dp" />
+        android:layout_marginBottom="105dp"
+        android:onClick="showListenView"/>
+
+
+
+
 
 
 
 </RelativeLayout>
-<!-- From: file:/Users/winniecheng/AndroidStudioProjects/gn-mobile-android-1.1.7.3690/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/src/main/res/layout/activity_main.xml -->
