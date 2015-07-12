@@ -36,10 +36,10 @@
             android:onClick="showVenueList"
             android:textSize="47sp"
             android:textColor="#4C2230"
-            android:background="#419180" />
+            android:background="#71cbd6" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="280sp"
             android:layout_height="wrap_content"
             android:text="Listen"
             android:id="@+id/button2"
@@ -49,7 +49,7 @@
             android:onClick="showListenView"
             android:textSize="47sp"
             android:textColor="#4C2230"
-            android:background="#419180"
+            android:background="#d43d4c"
             android:layout_centerHorizontal="true" />
 
         <ImageView
