@@ -28,9 +28,14 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class VenueActivity extends Activity {
+public class VenueActivity extends Activity implements OnTaskCompleted {
     TextView textview;
     String SESSION_URL_BASE = "http://symphonic2-1003.appspot.com/sessions-list";
+    String VENUE_URL_BASE = "http://symphonic2-1003.appspot.com/match/";
+    String VENUE_URL_FORMAT = "/json";
+    String artist;
+
+    private OnTaskCompleted listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +45,7 @@ public class VenueActivity extends Activity {
         textview = (TextView) findViewById(R.id.TextView01);
 
         Bundle bundle = getIntent().getExtras();
-        String artist = bundle.getString("artist");
+        artist = bundle.getString("artist");
 
 //        final Animation animation = new AlphaAnimation(1, 0); // Change alpha from fully visible to invisible
 //        animation.setDuration(500); // duration - half a second
@@ -59,14 +64,18 @@ public class VenueActivity extends Activity {
 
     }
 
-//    public void clearAnimation(View view) {
-//        view.clearAnimation();
-//    }
+    public void onTaskCompleted(boolean isReady) {
+        if (!isReady) {
+
+        }
+    }
 
     public void displaySessions(View view) {
-        PingCloudServerTask task = new PingCloudServerTask();
+        PingCloudServerTask task = new PingCloudServerTask(listener);
         task.setView(textview);
-        task.execute(new String[]{SESSION_URL_BASE});
+
+        String venueURL = VENUE_URL_BASE + artist + VENUE_URL_FORMAT;
+        task.execute(new String[]{venueURL});
 
 
 

@@ -36,7 +36,6 @@ public class MainActivity extends Activity {
         long time = System.currentTimeMillis();
         android.util.Log.i("Time Class ", " Time value in millisecinds "+time);
 
-        textView = (TextView) findViewById(R.id.TextView01);
     }
 
     public void showVenueList(View view) {

@@ -24,6 +24,11 @@ import java.io.InputStreamReader;
 public class PingCloudServerTask extends AsyncTask<String, Void, String> {
     private TextView v;
     public JSONArray json_arr;
+    private OnTaskCompleted listener;
+
+    public PingCloudServerTask(OnTaskCompleted listener){
+        this.listener=listener;
+    }
 
     public void setView(TextView view) {
         v = view;
@@ -82,6 +87,7 @@ public class PingCloudServerTask extends AsyncTask<String, Void, String> {
         try {
             JSONArray json = new JSONArray(result);
             v.setText(json.toString(1));
+            listener.onTaskCompleted(false);
         } catch (Exception e) {
             e.printStackTrace();
         }

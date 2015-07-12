@@ -9,34 +9,62 @@
 
 
 
-    <TextView android:text="Tutti" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="129dp"
-        android:textColor="#6DCAD7"
-        android:textSize="66sp" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:background="@color/twhite"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choose Venue"
-        android:id="@+id/button"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:onClick="showVenueList"/>
+        <TextView android:text="Tutti" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="129dp"
+            android:textColor="#4C2230"
+            android:textSize="118sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Recognize Venue"
-        android:id="@+id/button2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginBottom="105dp"
-        android:onClick="showListenView"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose stage"
+            android:id="@+id/button"
+            android:layout_above="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:onClick="showVenueList"
+            android:textSize="47sp"
+            android:textColor="#4C2230"
+            android:background="#419180" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listen"
+            android:id="@+id/button2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="showListenView"
+            android:textSize="47sp"
+            android:textColor="#4C2230"
+            android:background="#419180"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignBottom="@+id/textView" />
+
+
+
+    </RelativeLayout>
+
+
+
 
 
 
