@@ -1345,8 +1345,8 @@ public class GracenoteMusicID extends Activity {
 			artistText.setText(artist);
 
 			Log.e("ARTIST", artist);
-			String artist_str = artist.toLowerCase().replace(" ", "");
-			Log.e("ARTIST2", artist_str.replaceAll("[^A-Za-z0-9\\s]", ""));
+			String artist_str = artist.toLowerCase().replace(" ", "").replaceAll("[^A-Za-z0-9\\s]", "");
+//			Log.e("ARTIST2", artist_str.replaceAll("[^A-Za-z0-9\\s]", ""));
 
 			Intent intent = new Intent(this, VenueActivity.class);
 			intent.putExtra("artist", artist_str);

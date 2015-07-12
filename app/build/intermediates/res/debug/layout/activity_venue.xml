@@ -8,6 +8,14 @@
     tools:context="com.customer.example.VenueActivity">
 
     <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/readWebpage"
+        android:text="Placeholder" >
+    </TextView>
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -17,6 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="clearAnimation"/>
+
+
 
 </RelativeLayout>
 <!-- From: file:/Users/winniecheng/AndroidStudioProjects/Gracenote.Tutti/app/src/main/res/layout/activity_venue.xml -->
