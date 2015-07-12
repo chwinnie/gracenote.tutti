@@ -33,6 +33,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        long time = System.currentTimeMillis();
+        android.util.Log.i("Time Class ", " Time value in millisecinds "+time);
+
         textView = (TextView) findViewById(R.id.TextView01);
     }
 
@@ -70,40 +73,5 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-//    private class DownloadWebPageTask extends AsyncTask<String, Void, String> {
-//        @Override
-//        protected String doInBackground(String... urls) {
-//            String response = "";
-//            for (String url : urls) {
-//                DefaultHttpClient client = new DefaultHttpClient();
-//                HttpGet httpGet = new HttpGet(url);
-//                try {
-//                    HttpResponse execute = client.execute(httpGet);
-//                    InputStream content = execute.getEntity().getContent();
-//
-//                    BufferedReader buffer = new BufferedReader(new InputStreamReader(content));
-//                    String s = "";
-//                    while ((s = buffer.readLine()) != null) {
-//                        response += s;
-//                    }
-//
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//            return response;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(String result) {
-//            textView.setText(result);
-//        }
-//    }
-
-//    public void onClick(View view) {
-//        PingCloudServerTask task = new PingCloudServerTask();
-//        task.setView(textView);
-//        task.execute(new String[] { "http://symphonic2-1003.appspot.com/sessions-list" });
-//    }
 
 }
